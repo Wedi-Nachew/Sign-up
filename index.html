@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <img src="odin-lined.png" alt="odin-logo">
+        <p>ODIN</p>
+    </div>
+    <div class="container">
+        <p>
+            This is not a real online service! You Know you need something like this
+            in your life to help you realize your deepest dreams.<br>
+            Sign Up now to get started.
+        </p>
+        <p>
+            You know you want to
+        </p>
+        <form action="#" method="get" id="sign-up">
+            <p>Let's do this!</p>
+            <div class="form-row">
+                <div>
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first_name" 
+                    required="true">
+                    <span></span>
+                </div>
+                <div>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last_name" 
+                    required="true">
+                    <span></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" pattern="(.+)@(\w+).com" 
+                    required>
+                    <span></span>
+                </div>
+                <div>
+                    <label for="phone-num">Phone Number</label>
+                    <input type="tel" name="phone_num" id="phone-num" inputmode="number" 
+                    min="10" max="10">
+                    <span></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div>
+                    <label for="pwd">Password</label>
+                    <input type="password" name="password" id="pwd" required pattern="[\w\W\s\S]{8,24}">
+                    <span></span>
+                </div>
+                <div>
+                    <label for="pwd-match">Confirm Password</label>
+                    <input type="password" name="password_match" id="pwd-match" required>
+                    <span></span>
+                </div>
+            </div>
+        </form>
+        <div class="button">
+            <button type="submit" form="sign-up">Create Account</button>
+            <p>Already have an account? <span>Log In</span></p>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,175 @@
+@font-face{
+    font-family: "Norse-Bold";
+    src: url("norse-bold-webfont.woff") format("woff");
+}
+body {
+    background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
+    background-clip: border-box;
+    background-size: 39vw 160vh;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: column wrap;
+    background-origin: border-box;
+    font-family: "Solway", 'Times New Roman', Times, serif;
+    position: relative;
+}
+.wrapper{
+    background-color: rgba(35, 35, 35,0.5);
+    backdrop-filter: blur(15px) saturate(150%);
+    --webkit-backdrop-filter: blur(15px) saturate(150%);
+    display: flex;
+    position: absolute;
+    width: 39vw;
+    box-sizing: border-box;
+    margin-left: -9px;
+    height: 150px;
+    justify-content: center;
+    top: calc(25vh + 20px)
+}
+.wrapper > p{
+    font-size: 90px;
+    font-family: "Norse-Bold", cursive;
+    color: #ffffff;
+    position: relative;
+    top: -70px;
+    box-sizing: border-box;
+}
+img{
+    width: 90px;
+    height: 120px;
+    position: relative;
+    top: 10px;
+    box-sizing: border-box;
+
+}
+.container {
+    background-color: #f9fafb;
+    width: 60vw;
+    height: 150vh;
+    margin-left: 39vw;
+    margin-bottom: -8px;
+    margin-top: -8px;
+}
+
+.container > p{
+    margin-bottom: 3.5rem;
+    width: clamp(40ch, 50ch ,80ch);
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 1.9rem;
+    font-size: 1.3rem;
+    padding: 0 5%;
+}
+.container > p:first-child{
+    margin-top: 20vh;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+form {
+    background-color: #ffffff;
+    border: 1px solid #fff;
+    box-shadow: 0 0 7px #ccc;
+    margin-left: -7px;
+    padding: 20px 6%;
+    margin-bottom: 30px;;
+}
+
+form > p{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.form-row{
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 60px;
+    margin-bottom: 25px;
+}
+.form-row > div{
+    display: flex;
+    flex-flow: column wrap;
+}
+input,
+button,
+label {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+input{
+    height: 1.8rem;
+    outline: none;
+    width: 300px;
+    border-radius: 3px;
+    border: 1px solid #E5E7EB;
+    vertical-align: baseline;
+    background-color: #ffffff;
+}
+.button {
+    padding: 0 5%;
+}
+button {
+    background-color: #596D48;
+    color: #ffffff;
+    font-size: 1.3rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    cursor: pointer;
+    box-shadow: 0 0 3px #596D48;
+}
+p > span{
+    color: #596D48;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #4d7628;
+}
+p > span:hover {
+    color: #45870b;
+}
+
+input:focus,
+input:hover{
+    border: 2px solid rgb(12, 115, 189);
+}
+input:invalid:focus{
+    border: 2px solid rgb(228, 13, 13);
+}
+input + span {
+    position: relative;
+}
+input:invalid:focus + span::after {
+    content:  "⚠ This field is required";
+    color:rgb(228, 13, 13);
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+input[id="pwd"]:first-of-type:invalid:focus + span::after{
+    content:  "⚠ Password should be at least 8";
+    color:rgb(228, 13, 13);
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+input[id="pwd-match"]:first-of-type:invalid:focus + span::after{
+    content:  "⚠ Password do not match";
+    color:rgb(228, 13, 13);
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+input:valid{
+    border: 2px solid green;
+}
+input:valid + span::before{
+    content: "✓";
+    color: green;
+    position: absolute;
+    left: 102%;
+    bottom: 5px;
+}
+

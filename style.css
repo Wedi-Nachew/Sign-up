@@ -149,12 +149,14 @@ input:not(input[id="pwd-match"]):invalid:focus + span::after {
     color:rgb(228, 13, 13);
     font-weight: 300;
     font-size: 0.8rem;
+    position: absolute;
 }
 input[id="pwd"]:first-of-type:invalid:focus + span::after{
     content:  "⚠ Password should be at least 8";
     color:rgb(228, 13, 13);
     font-weight: 300;
     font-size: 0.8rem;
+    position: absolute;
 }
 input:not(input[id="pwd-match"]):valid{
     border: 2px solid green;
@@ -182,6 +184,7 @@ input[class="error"]:focus + span::after{
     color:rgb(228, 13, 13);
     font-weight: 300;
     font-size: 0.8rem;
+    position: absolute;
 }
 input[class="error"]{
     border: 2px solid rgb(228, 13, 13);

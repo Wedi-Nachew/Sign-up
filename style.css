@@ -138,13 +138,13 @@ input:focus,
 input:hover{
     border: 2px solid rgb(12, 115, 189);
 }
-input:invalid:focus{
+input::not(input[id="pwd-match"])invalid:focus{
     border: 2px solid rgb(228, 13, 13);
 }
 input + span {
     position: relative;
 }
-input:invalid:focus + span::after {
+input:not(input[id="pwd-match"]):invalid:focus + span::after {
     content:  "⚠ This field is required";
     color:rgb(228, 13, 13);
     font-weight: 300;
@@ -156,16 +156,16 @@ input[id="pwd"]:first-of-type:invalid:focus + span::after{
     font-weight: 300;
     font-size: 0.8rem;
 }
-input[id="pwd-match"]:first-of-type:invalid:focus + span::after{
+input[class="error"]:invalid:focus + span::after{
     content:  "⚠ Password do not match";
     color:rgb(228, 13, 13);
     font-weight: 300;
     font-size: 0.8rem;
 }
-input:valid{
+input:not(input[id="pwd-match"]):valid{
     border: 2px solid green;
 }
-input:valid + span::before{
+input:not(input[id="pwd-match"]):valid + span::before{
     content: "✓";
     color: green;
     position: absolute;
@@ -173,3 +173,10 @@ input:valid + span::before{
     bottom: 5px;
 }
 
+.confirmed{
+    content: "✓";
+    color: green;
+    position: absolute;
+    left: 102%;
+    bottom: 5px;
+}

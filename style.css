@@ -138,7 +138,7 @@ input:focus,
 input:hover{
     border: 2px solid rgb(12, 115, 189);
 }
-input::not(input[id="pwd-match"])invalid:focus{
+input:not(input[id="pwd-match"])invalid:focus{
     border: 2px solid rgb(228, 13, 13);
 }
 input + span {
@@ -182,4 +182,7 @@ input[class="error"]:focus + span::after{
     color:rgb(228, 13, 13);
     font-weight: 300;
     font-size: 0.8rem;
+}
+input[class="error"]{
+    border: 2px solid rgb(228, 13, 13);
 }

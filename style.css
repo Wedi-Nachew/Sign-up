@@ -144,8 +144,15 @@ input:not(input[id="pwd-match"]):invalid:focus{
 input + span {
     position: relative;
 }
-input:not(input[type="password"]):invalid:focus + span::after {
+input[type="text"]:invalid:focus + span::after {
     content:  "⚠ This field is required";
+    color:rgb(228, 13, 13);
+    font-weight: 300;
+    font-size: 0.8rem;
+    position: absolute;
+}
+input[type="email"]:invalid:focus + span::after{
+    content:  "⚠ Please enter a valid email";
     color:rgb(228, 13, 13);
     font-weight: 300;
     font-size: 0.8rem;

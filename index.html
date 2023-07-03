@@ -51,7 +51,7 @@
                 <div>
                     <label for="phone-num">Phone Number</label>
                     <input type="tel" name="phone_num" id="phone-num" inputmode="number" 
-                    min="10" max="10" placeholder="0920304050">
+                    pattern="\d{10}|(\d+-){4}\d+|(\d+\s){4}\d+" placeholder="0920304050" required>
                     <span></span>
                 </div>
             </div>

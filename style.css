@@ -165,12 +165,10 @@ input[id="pwd"]:invalid:focus + span::after{
     font-size: 0.8rem;
     position: absolute;
 }
-input:not(input[id="pwd-match"]):valid:focus,
-input:not(input[id="phone-num"]):valid:focus{
+input:not(input[id="pwd-match"]):valid:focus{
     border: 2px solid green;
 }
-input:not(input[id="pwd-match"]):valid + span::before,
-input:not(input[id="phone-num"]):valid + span::before{
+input:not(input[id="pwd-match"]):valid + span::before{
     content: "✓";
     color: green;
     position: absolute;

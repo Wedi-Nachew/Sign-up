@@ -207,4 +207,11 @@ input::placeholder{
     position: absolute;
     top: 96%;
     left: 10%;
+    font-size: 0.9rem;
+}
+
+.credit > a:link,
+.credit > a{
+    color: inherit;
+    font-size: inherit;
 }

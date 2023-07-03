@@ -196,3 +196,8 @@ input[class="error"]:focus + span::after{
 input[class="error"]:focus{
     border: 2px solid rgb(228, 13, 13);
 }
+
+input::placeholder{
+    color:rgb(85, 86, 86);
+    font-size: 0.8rem;
+}

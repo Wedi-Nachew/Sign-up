@@ -156,12 +156,6 @@ input[id="pwd"]:first-of-type:invalid:focus + span::after{
     font-weight: 300;
     font-size: 0.8rem;
 }
-input[class="error"]:invalid:focus + span::after{
-    content:  "⚠ Password do not match";
-    color:rgb(228, 13, 13);
-    font-weight: 300;
-    font-size: 0.8rem;
-}
 input:not(input[id="pwd-match"]):valid{
     border: 2px solid green;
 }
@@ -179,5 +173,13 @@ input[class="confirmed"] + span::before{
     position: absolute;
     left: 102%;
     bottom: 5px;
+}
+input[class="confirmed"]{
     border: 2px solid green;
+}
+input[class="error"]:focus + span::after{
+    content:  "⚠ Password do not match";
+    color:rgb(228, 13, 13);
+    font-weight: 300;
+    font-size: 0.8rem;
 }

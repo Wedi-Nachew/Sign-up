@@ -173,10 +173,11 @@ input:not(input[id="pwd-match"]):valid + span::before{
     bottom: 5px;
 }
 
-.confirmed{
+input[class="confirmed"] + span::before{
     content: "✓";
     color: green;
     position: absolute;
     left: 102%;
     bottom: 5px;
+    border: 2px solid green;
 }

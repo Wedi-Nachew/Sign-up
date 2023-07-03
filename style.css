@@ -201,3 +201,10 @@ input::placeholder{
     color:rgb(85, 86, 86);
     font-size: 0.8rem;
 }
+
+.credit{
+    color: #ffffff;
+    position: absolute;
+    top: 96%;
+    left: 10%;
+}
